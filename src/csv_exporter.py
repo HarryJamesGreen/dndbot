@@ -1,12 +1,6 @@
-import csv
-def export_to_csv(data, filename="output.csv"):
-    """
-    Exports given data to a CSV file.
-
-    Parameters:
-    - data (list of lists): Data to be exported.
-    - filename (str): Name of the CSV file.
-    """
+headers = ['Timestamp', 'Message']
+def export_to_csv(data, headers, filename="output.csv"):
     with open(filename, 'w', newline='') as file:
         writer = csv.writer(file)
+        writer.writerow(headers)
         writer.writerows(data)

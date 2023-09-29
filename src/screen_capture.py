@@ -1,14 +1,7 @@
 import pyautogui
+import pygetwindow as gw
 
-def capture_screen(region=None):
-    """
-    Captures the screen or a region of the screen.
-    
-    Parameters:
-    - region (tuple): (x, y, width, height) of the region to capture. Captures full screen if None.
-    
-    Returns:
-    - Image: Captured screenshot.
-    """
-    screenshot = pyautogui.screenshot(region=region)
-    return screenshot
+def capture_specific_window(title):
+    window = gw.getWindowsWithTitle(title)[0]
+    left, top, width, height = window.left, window.top, window.width, window.height
+    return pyautogui.screenshot(region=(left, top, width, height))
