@@ -25,9 +25,3 @@ def capture_dark_and_darker_window():
         print(f"Window with title '{window_title}' not found.")
         return None, None  # Return None for both the image and region
 
-# Example usage
-captured_image, region = capture_dark_and_darker_window()
-if captured_image:
-    captured_image.save("captured_dark_and_darker.png")  # Save the captured image to a file
-
-# Now you can use the 'region' variable in your other script (Training.py)
