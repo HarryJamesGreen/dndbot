@@ -77,6 +77,6 @@ if __name__ == "__main__":
         processed_data = process_ocr_results(ocr_text, last_processed_timestamp)
         if processed_data:
             last_processed_timestamp = max(processed_data, key=lambda x: x['timestamp'])['timestamp']
-        export_to_csv(processed_data, 'processed_data.csv')
+        export_to_csv(processed_data, '../processed_data.csv')
     except Exception as e:
         print(f"Error in main execution: {e}")

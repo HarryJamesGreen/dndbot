@@ -10,7 +10,7 @@ from src.screen_capture import capture_dark_and_darker_window
 from src.data_processing import process_ocr_results
 
 # Set up logging
-logging.basicConfig(filename='../docs/ocr.log', level=logging.INFO)
+logging.basicConfig(filename='ocr.log', level=logging.INFO)
 # Set up pytesseract
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 # Initialize variables for the last processed timestamp
@@ -32,7 +32,7 @@ def main():
         # Capture the specified region
         screenshot, region = capture_dark_and_darker_window()  # Capture both the image and region
         if screenshot:
-            screenshot.save("screenshot.png")
+            screenshot.save("screenshot.jpeg")
         else:
             print("Failed to capture the screenshot.")
 
@@ -55,7 +55,7 @@ def main():
         data_to_export.extend(processed_data)
 
         # Export the data to the CSV file
-        export_to_csv(data_to_export, 'docs/processed_data.csv')
+        export_to_csv(data_to_export, '../processed_data.csv')
 
 if __name__ == "__main__":
     main()
