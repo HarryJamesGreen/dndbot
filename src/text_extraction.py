@@ -1,16 +1,13 @@
-
 import pytesseract
+from statistics import mode
+import cv2
 
+def extract_text_and_color_from_image(image):
+    text = pytesseract.image_to_string(image, timeout=10).strip()
 
-def extract_text_from_image(image):
-    """
-    Extracts text from a given image.
+    # Convert the image to RGB
+    image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+    pixels = image_rgb.reshape((-1, 3))
+    dominant_color = mode(map(tuple, pixels))
 
-    Parameters:
-    - image (Image): Image to extract text from.
-
-    Returns:
-    - str: Extracted text.
-    """
-    text = pytesseract.image_to_string(image, timeout=10)  # Set a 10-second timeout
-    return text.strip()
+    return text, dominant_color
