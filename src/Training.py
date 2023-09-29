@@ -39,7 +39,7 @@ annotated_data = []
 # Function to handle mouse events for drawing bounding boxes
 
 
-def draw_bounding_box(event, x, y):
+def draw_bounding_box(event, x, y, flags, param):
     global drawing, start_point, end_point, image_copy
 
     if event == cv2.EVENT_LBUTTONDOWN:
