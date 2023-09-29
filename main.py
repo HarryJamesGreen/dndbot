@@ -26,6 +26,7 @@ def main():
 
         # Export the data to a CSV file
         export_to_csv(data, headers)
+        print(text)
 
         # Wait for a few seconds before capturing again
         time.sleep(5)  # Adjust the interval as needed
