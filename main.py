@@ -1,32 +1,34 @@
 from src.screen_capture import capture_screen
 from src.text_extraction import extract_text_from_image
+from src.csv_exporter import export_to_csv
+import pytesseract
+import datetime
 import time
 
+pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'  # Adjust the path accordingly
+
 def main():
+    headers = ['Timestamp', 'Message']
     while True:
-        # Capture the chat window
-        screenshot = capture_specific_window(window_title='Dark and Darker')
+        # Define the region to capture (adjust these values as needed)
+        region = (100, 100, 300, 300)
+
+        # Capture the screen region
+        screenshot = capture_screen(region=region)
 
         # Extract text from the screenshot
-        chat_content = extract_text_from_image(screenshot)
+        text = extract_text_from_image(screenshot)
 
-        # Process new messages (avoid duplicates)
-        new_messages = chat_content.difference(previous_chat_content)
-        for message in new_messages:
-            # Process each new message (e.g., save to CSV, display in console/GUI, etc.)
-            process_message(message)
+        # Process the extracted text
+        timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        messages = text.splitlines()
+        data = [[timestamp, message] for message in messages]
 
-        # Update the previous chat content
-        previous_chat_content = chat_content
+        # Export the data to a CSV file
+        export_to_csv(data, headers)
 
         # Wait for a few seconds before capturing again
         time.sleep(5)  # Adjust the interval as needed
 
-
-def process_message(message):
-    # Your code to process/save/display each new message
-    pass
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
