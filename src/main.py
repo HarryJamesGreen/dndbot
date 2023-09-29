@@ -1,8 +1,9 @@
-import csv
+
 import pytesseract
-import time
-import logging
 from datetime import datetime
+import logging
+
+logging.basicConfig(level=logging.DEBUG)
 
 from src.csv_exporter import export_to_csv
 from src.Training import perform_ocr_and_annotation
@@ -39,10 +40,10 @@ def main():
         # Try to extract text from the screenshot
         try:
             text = pytesseract.image_to_string(screenshot)
+            logging.debug(f"Extracted text: {text}")
         except Exception as e:
             print(f"Error extracting text: {e}")
             continue  # Skip the current iteration and continue with the next
-        print(text)
 
         # Process the OCR results and get the processed data
         processed_data = process_ocr_results(text)
@@ -55,6 +56,7 @@ def main():
         data_to_export.extend(processed_data)
 
         # Export the data to the CSV file
+        logging.debug(f"Data to export: {data_to_export}")
         export_to_csv(data_to_export, '../processed_data.csv')
 
 if __name__ == "__main__":
