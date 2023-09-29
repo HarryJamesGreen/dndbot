@@ -3,18 +3,28 @@ from src.text_extraction import extract_text_from_image
 from src.csv_exporter import export_to_csv
 import pytesseract
 import datetime
+import pygetwindow as gw
 import time
+import pyautogui
+import random
+from src.mouse_interaction import jiggle_mouse
 
 pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'  # Adjust the path accordingly
 
 def main():
+    # Define the headers for the CSV
     headers = ['Timestamp', 'Message']
-    while True:
-        # Define the region to capture (adjust these values as needed)
-        region = (100, 100, 300, 300)
 
-        # Capture the screen region
-        screenshot = capture_screen(region=region)
+    # Get the window by its title
+    window_title = 'Dark and Darker'
+    window = gw.getWindowsWithTitle(window_title)[0]
+
+    # Define the region to capture the left half of the window
+    region = (window.left, window.top, 640, 720)
+
+    while True:
+        # Capture the specified region
+        screenshot = capture_screen(region)
 
         # Extract text from the screenshot
         text = extract_text_from_image(screenshot)
@@ -26,10 +36,7 @@ def main():
 
         # Export the data to a CSV file
         export_to_csv(data, headers)
-        print(text)
 
-        # Wait for a few seconds before capturing again
-        time.sleep(5)  # Adjust the interval as needed
 
 if __name__ == "__main__":
     main()
