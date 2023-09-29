@@ -8,14 +8,20 @@ from src.csv_exporter import export_to_csv
 from src.Training import perform_ocr_and_annotation
 from src.screen_capture import capture_dark_and_darker_window
 from src.data_processing import process_ocr_results
+from src.text_extraction import extract_text_and_color_from_image
 
 # Set up logging
-logging.basicConfig(filename='docs/ocrData.log', level=logging.INFO)
+logging.basicConfig(filename='../docs/ocr.log', level=logging.INFO)
 # Set up pytesseract
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 # Initialize variables for the last processed timestamp
 last_processed_timestamp = datetime(1900, 1, 1)  # Initialize with a very old timestamp
-start_time = time.time()
+
+def save_raw_ocr_to_csv(text, filename):
+    with open(filename, 'a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow([text])
+
 def main():
     global last_processed_timestamp  # Declare last_processed_timestamp as global
 
@@ -38,21 +44,22 @@ def main():
 
         # Try to extract text from the screenshot
         try:
-            text = pytesseract.image_to_string(screenshot)
-            # Measure the end time
-            end_time = time.time()
-
-            # Calculate and print the execution time
-            execution_time = end_time - start_time
-            print(f"Execution time: {execution_time} seconds")
-
+            text, color = extract_text_and_color_from_image(screenshot)
+            # Save the raw OCR text to output.csv
+            save_raw_ocr_to_csv(text, 'src/docs/output.csv')
         except Exception as e:
             print(f"Error extracting text: {e}")
             continue  # Skip the current iteration and continue with the next
-
+        print(text)
 
         # Process the OCR results and get the processed data
-        processed_data = process_ocr_results(text)
+        processed_data = {
+            'timestamp': ...,
+            'name': ...,
+            'item': text,
+            'price': ...,
+            'color': color
+        }
 
         # Update the last processed timestamp to the latest timestamp in the processed data
         if processed_data:
@@ -62,8 +69,7 @@ def main():
         data_to_export.extend(processed_data)
 
         # Export the data to the CSV file
-        export_to_csv(data_to_export, 'docs/processed_data.csv')
-        print(processed_data)
+        export_to_csv(data_to_export, 'src/docs/processed_data.csv')
 
 if __name__ == "__main__":
     main()

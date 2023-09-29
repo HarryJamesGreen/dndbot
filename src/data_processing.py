@@ -71,7 +71,7 @@ def export_to_csv(data, csv_filename):
 
 if __name__ == "__main__":
     try:
-        with open('docs/output.txt', 'r', ) as ocr_file:
+        with open('docs/output.csv', 'r', ) as ocr_file:
             ocr_text = ocr_file.read()
         last_processed_timestamp = datetime(1900, 1, 1)
         processed_data = process_ocr_results(ocr_text, last_processed_timestamp)
