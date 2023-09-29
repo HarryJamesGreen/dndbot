@@ -8,6 +8,7 @@ from src.csv_exporter import export_to_csv
 from src.Training import perform_ocr_and_annotation
 from src.screen_capture import capture_dark_and_darker_window
 from src.data_processing import process_ocr_results
+from src.text_extraction import extract_text_and_color_from_image
 
 # Set up logging
 logging.basicConfig(filename='../docs/ocr.log', level=logging.INFO)
@@ -38,14 +39,20 @@ def main():
 
         # Try to extract text from the screenshot
         try:
-            text = pytesseract.image_to_string(screenshot)
+            text, color = extract_text_and_color_from_image(screenshot)
         except Exception as e:
             print(f"Error extracting text: {e}")
             continue  # Skip the current iteration and continue with the next
         print(text)
 
         # Process the OCR results and get the processed data
-        processed_data = process_ocr_results(text)
+        processed_data = {
+            'timestamp': ...,
+            'name': ...,
+            'item': text,
+            'price': ...,
+            'color': color
+        }
 
         # Update the last processed timestamp to the latest timestamp in the processed data
         if processed_data:
@@ -55,7 +62,7 @@ def main():
         data_to_export.extend(processed_data)
 
         # Export the data to the CSV file
-        export_to_csv(data_to_export, 'docs/processed_data.csv')
+        export_to_csv(data_to_export, 'src/docs/processed_data.csv')
 
 if __name__ == "__main__":
     main()
