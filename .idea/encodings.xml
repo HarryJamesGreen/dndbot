@@ -2,7 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/docs/ocr.log" charset="windows-1252" />
-    <file url="file://$PROJECT_DIR$/output.csv" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/docs/ocr.log" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/docs/output.csv" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/docs/output.csv" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/annotated_data.txt" charset="windows-1252" />
     <file url="PROJECT" charset="windows-1252" />
   </component>

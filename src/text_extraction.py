@@ -1,16 +1,12 @@
+import re
 
-import pytesseract
 
+def process_ocr_results(text):
+    # Regular expression pattern to match the format
+    pattern = r'\[(\d{2}:\d{2}:\d{2}[AM|PM]{2})\] \(([^)]+)\) : ([^:]+): (\d{4}G)'
 
-def extract_text_from_image(image):
-    """
-    Extracts text from a given image.
-
-    Parameters:
-    - image (Image): Image to extract text from.
-
-    Returns:
-    - str: Extracted text.
-    """
-    text = pytesseract.image_to_string(image, timeout=10)  # Set a 10-second timeout
-    return text.strip()
+    matches = re.findall(pattern, text)
+    for match in matches:
+        timestamp, name, item, gold = match
+        # Process the extracted data as needed
+        print(f"Timestamp: {timestamp}, Name: {name}, Item: {item}, Gold: {gold}")
