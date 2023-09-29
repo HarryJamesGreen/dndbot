@@ -1,13 +1,12 @@
-import pytesseract
-from statistics import mode
-import cv2
+import re
 
-def extract_text_and_color_from_image(image):
-    text = pytesseract.image_to_string(image, timeout=30).strip()
 
-    # Convert the image to RGB
-    image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-    pixels = image_rgb.reshape((-1, 3))
-    dominant_color = mode(map(tuple, pixels))
+def process_ocr_results(text):
+    # Regular expression pattern to match the format
+    pattern = r'\[(\d{2}:\d{2}:\d{2}[AM|PM]{2})\] \(([^)]+)\) : ([^:]+): (\d{4}G)'
 
-    return text, dominant_color
+    matches = re.findall(pattern, text)
+    for match in matches:
+        timestamp, name, item, gold = match
+        # Process the extracted data as needed
+        print(f"Timestamp: {timestamp}, Name: {name}, Item: {item}, Gold: {gold}")

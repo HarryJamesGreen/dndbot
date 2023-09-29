@@ -9,7 +9,10 @@ from src.csv_exporter import export_to_csv
 from src.Training import perform_ocr_and_annotation
 from src.screen_capture import capture_dark_and_darker_window
 from src.data_processing import process_ocr_results
-from src.text_extraction import extract_text_and_color_from_image
+def save_raw_ocr_to_csv(text, filename):
+    with open(filename, 'a', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow([text])
 
 # Set up logging
 logging.basicConfig(filename='../docs/ocr.log', level=logging.INFO)
@@ -18,10 +21,7 @@ pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesse
 # Initialize variables for the last processed timestamp
 last_processed_timestamp = datetime(1900, 1, 1)  # Initialize with a very old timestamp
 
-def save_raw_ocr_to_csv(text, filename):
-    with open(filename, 'a', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow([text])
+# ... [other imports]
 
 def main():
     global last_processed_timestamp  # Declare last_processed_timestamp as global
@@ -37,14 +37,14 @@ def main():
 
     while True:
         # Capture the specified region
-        screenshot, region = capture_dark_and_darker_window()  # Capture both the image and region
+        screenshot = capture_dark_and_darker_window()  # Capture the image
         if screenshot:
             # Convert the PIL Image to a numpy array
             screenshot_np = np.array(screenshot)
             # Try to extract text from the screenshot
             try:
-                text, color = extract_text_and_color_from_image(screenshot_np)
-                print(f"Extracted Text: {text} | Extracted Color: {color}")
+                text = pytesseract.image_to_string(screenshot_np)
+                print(f"Extracted Text: {text}")
                 # Save the raw OCR text to output.csv
                 save_raw_ocr_to_csv(text, 'docs/output.csv')
             except Exception as e:
@@ -58,23 +58,14 @@ def main():
             continue
 
         # Process the OCR results and get the processed data
-        processed_data = {
-            'timestamp': ...,
-            'name': ...,
-            'item': text,
-            'price': ...,
-            'color': color
-        }
-
-        # Update the last processed timestamp to the latest timestamp in the processed data
-        if processed_data and isinstance(processed_data, dict) and 'timestamp' in processed_data:
-            last_processed_timestamp = processed_data['timestamp']
+        processed_data_list = process_ocr_results(text)
 
         # Append the processed data to data_to_export
-        data_to_export.append(processed_data)
+        data_to_export.extend(processed_data_list)
 
         # Export the data to the CSV file
         export_to_csv(data_to_export, 'docs/processed_data.csv')
 
 if __name__ == "__main__":
     main()
+
