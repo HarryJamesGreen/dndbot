@@ -22,6 +22,9 @@ end_point = (-1, -1)
 # Create a copy of the image for drawing
 image_copy = None
 
+# Set up logging with buffering
+logging.basicConfig(filename='ocr.log', level=logging.INFO, buffer=10)
+
 
 def process_ocr_result(ocr_text):
     # Implement logic to process the OCR result
