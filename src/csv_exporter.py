@@ -1,13 +1,6 @@
 import csv
 
 def export_to_csv(data, filename="output.csv"):
-    """
-    Exports given data to a CSV file.
-
-    Parameters:
-    - data (list of lists): Data to be exported.
-    - filename (str): Name of the CSV file.
-    """
-    with open(filename, 'w', newline='') as file:
+    with open(filename, 'a', newline='') as file:  # 'a' mode for appending
         writer = csv.writer(file)
         writer.writerows(data)

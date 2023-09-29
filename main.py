@@ -40,7 +40,8 @@ def main():
                 data_to_export.append([line])
 
             # Export the data to the CSV file
-        export_to_csv(data_to_export)
+            print(data_to_export)
+            export_to_csv(data_to_export)
 
 
 if __name__ == "__main__":
