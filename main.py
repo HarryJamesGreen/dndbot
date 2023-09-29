@@ -1,8 +1,9 @@
-import csv
+import numpy as np
 import pytesseract
 import time
 import logging
 from datetime import datetime
+import csv
 
 from src.csv_exporter import export_to_csv
 from src.Training import perform_ocr_and_annotation
@@ -38,19 +39,22 @@ def main():
         # Capture the specified region
         screenshot, region = capture_dark_and_darker_window()  # Capture both the image and region
         if screenshot:
-            screenshot.save("screenshot.png")
+            # Convert the PIL Image to a numpy array
+            screenshot_np = np.array(screenshot)
+            # Try to extract text from the screenshot
+            try:
+                text, color = extract_text_and_color_from_image(screenshot_np)
+                # Save the raw OCR text to output.csv
+                save_raw_ocr_to_csv(text, 'docs/output.csv')
+            except Exception as e:
+                print(f"Error extracting text: {e}")
+                continue  # Skip the current iteration and continue with the next
+            print(text)
+            # Save the screenshot as a JPEG as a workaround for the PIL error
+            screenshot.save("screenshot.jpg", "JPEG")
         else:
             print("Failed to capture the screenshot.")
-
-        # Try to extract text from the screenshot
-        try:
-            text, color = extract_text_and_color_from_image(screenshot)
-            # Save the raw OCR text to output.csv
-            save_raw_ocr_to_csv(text, 'src/docs/output.csv')
-        except Exception as e:
-            print(f"Error extracting text: {e}")
-            continue  # Skip the current iteration and continue with the next
-        print(text)
+            continue
 
         # Process the OCR results and get the processed data
         processed_data = {
@@ -60,16 +64,18 @@ def main():
             'price': ...,
             'color': color
         }
+        print(type(processed_data))
+        print(processed_data)
 
         # Update the last processed timestamp to the latest timestamp in the processed data
-        if processed_data:
-            last_processed_timestamp = max(processed_data, key=lambda x: x['timestamp'])['timestamp']
+        if processed_data and isinstance(processed_data, dict) and 'timestamp' in processed_data:
+            last_processed_timestamp = processed_data['timestamp']
 
         # Append the processed data to data_to_export
         data_to_export.extend(processed_data)
 
         # Export the data to the CSV file
-        export_to_csv(data_to_export, 'src/docs/processed_data.csv')
+        export_to_csv(data_to_export, 'docs/processed_data.csv')
 
 if __name__ == "__main__":
     main()

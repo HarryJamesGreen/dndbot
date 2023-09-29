@@ -3,7 +3,7 @@ from statistics import mode
 import cv2
 
 def extract_text_and_color_from_image(image):
-    text = pytesseract.image_to_string(image, timeout=10).strip()
+    text = pytesseract.image_to_string(image, timeout=30).strip()
 
     # Convert the image to RGB
     image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
