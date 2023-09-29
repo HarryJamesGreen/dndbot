@@ -1,16 +1,13 @@
-# This is a sample Python script.
+def main():
+    # Define the region to capture (you can adjust these values)
+    region = (100, 100, 300, 300)
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+    # Capture the screen region
+    screenshot = capture_screen(region)
 
+    # Extract text from the screenshot
+    text = extract_text_from_image(screenshot)
+    print(f"Extracted Text: {text}")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    # Example: Move mouse to a position (you can adjust these values)
+    move_mouse_to_position(150, 150)
