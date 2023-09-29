@@ -1,6 +1,6 @@
 from src.csv_exporter import export_to_csv
-from src.screen_capture import capture_screen
-import pygetwindow as gw
+from src.screen_capture import capture_dark_and_darker_window
+from src.data_processing import remove_duplicates_from_list
 import pytesseract
 import time
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
@@ -9,23 +9,13 @@ pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesse
 def main():
     data_to_export = []
 
-    # Get the window by its title
-    window_title = 'Dark and Darker'
-
-    # Use getWindowsWithTitles to find the window
-    windows = gw.getWindowsWithTitle(window_title)
-
-    if windows:
-        # If the window is found, use the first window in the list
-        window = windows[0]
-
-        # Define the region to capture the left half of the window
-        region = (window.left, window.top, window.width // 2, window.height)
-
-        while True:
+    while True:
             # Capture the specified region
-            screenshot = capture_screen(region)
-            screenshot.save("screenshot.png")
+            screenshot = capture_dark_and_darker_window()
+            if screenshot:
+                screenshot.save("screenshot.png")
+            else:
+                print("Failed to capture the screenshot.")
 
             # Try to extract text from the screenshot
             try:
@@ -40,8 +30,10 @@ def main():
                 data_to_export.append([line])
 
             # Export the data to the CSV file
-            print(data_to_export)
+            data = [1, 2, 2, 3, 4, 4, 5]
+            unique_data = remove_duplicates_from_list(data)
             export_to_csv(data_to_export)
+            time.sleep(2)
 
 
 if __name__ == "__main__":
