@@ -1,11 +1,12 @@
-import pyautogui
+
 import pytesseract
 from PIL import Image
 import cv2
 import numpy as np
 import re
 import logging
-import time
+
+from src.screen_capture import capture_dark_and_darker_window
 
 # Set up logging
 logging.basicConfig(filename='ocr.log', level=logging.INFO)
@@ -21,15 +22,13 @@ end_point = (-1, -1)
 # Create a copy of the image for drawing
 image_copy = None
 
-# Define the process_ocr_result function
+
 def process_ocr_result(ocr_text):
     # Implement logic to process the OCR result
     logging.info("Processed OCR Result:")
     logging.info(ocr_text)
     # Add your custom processing logic here
 
-# Import the capture_dark_and_darker_window function from screen_capture.py
-from src.screen_capture import capture_dark_and_darker_window
 
 # Define the file to store annotated data
 annotated_data_file = 'annotated_data.txt'
@@ -38,7 +37,9 @@ annotated_data_file = 'annotated_data.txt'
 annotated_data = []
 
 # Function to handle mouse events for drawing bounding boxes
-def draw_bounding_box(event, x, y, flags, param):
+
+
+def draw_bounding_box(event, x, y):
     global drawing, start_point, end_point, image_copy
 
     if event == cv2.EVENT_LBUTTONDOWN:
@@ -57,6 +58,8 @@ def draw_bounding_box(event, x, y, flags, param):
         cv2.imshow("Captured Image", image_copy)
 
 # Function for more advanced OCR processing using regular expressions
+
+
 def advanced_ocr_processing(ocr_text):
     # Define a regular expression pattern to match product names and prices
     pattern = r'\[([^\]]+)\] price (\d{4}G)'
@@ -69,6 +72,8 @@ def advanced_ocr_processing(ocr_text):
             print(f"Product Name: {product_name}, Price: {price}")
 
 # Function to perform OCR and annotate data
+
+
 def perform_ocr_and_annotation():
     global screenshot, image_copy
 
@@ -127,12 +132,16 @@ def perform_ocr_and_annotation():
         print("Failed to capture the screenshot.")
 
 # Main function
+
+
 def main():
     # Perform OCR and annotation three times at the beginning
     for _ in range(3):
         perform_ocr_and_annotation()
 
-    # The rest of your main code here
+
+
+
 
 if __name__ == "__main__":
     main()
