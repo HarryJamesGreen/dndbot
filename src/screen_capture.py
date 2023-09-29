@@ -1,6 +1,7 @@
 import pygetwindow as gw
 import pyautogui
-
+import pytesseract
+pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 def capture_dark_and_darker_window():
     """
     Captures the content of the "Dark and Darker" window.
