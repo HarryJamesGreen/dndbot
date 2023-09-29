@@ -21,7 +21,6 @@ pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\\tessera
 # Initialize variables for the last processed timestamp
 last_processed_timestamp = datetime(1900, 1, 1)  # Initialize with a very old timestamp
 
-# ... [other imports]
 
 def main():
     global last_processed_timestamp  # Declare last_processed_timestamp as global
@@ -39,9 +38,9 @@ def main():
         # Capture the specified region
         screenshot, region = capture_dark_and_darker_window()  # Capture the image and region
         if screenshot:
-            screenshot.save("debug_screenshot.png")
+            screenshot.save("screenshot.jpeg")
             try:
-                text = pytesseract.image_to_string(screenshot)  # Directly pass the PIL Image
+                text = pytesseract.image_to_string('screenshot.jpeg')  # Directly pass the PIL Image
                 print(f"Extracted Text: {text}")
                 # Save the raw OCR text to output.csv
                 save_raw_ocr_to_csv(text, 'docs/output.csv')
@@ -50,7 +49,7 @@ def main():
                 continue  # Skip the current iteration and continue with the next
             print(text)
             # Save the screenshot as a JPEG as a workaround for the PIL error
-            screenshot.save("screenshot.jpg", "JPEG")
+            screenshot.save("screenshot.jpeg", "JPEG")
         else:
             print("Failed to capture the screenshot.")
             continue
