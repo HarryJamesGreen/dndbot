@@ -46,7 +46,7 @@ def main():
         print(text)
 
         # Process the OCR results and get the processed data
-        processed_data = process_ocr_results(text, last_processed_timestamp)
+        processed_data = process_ocr_results(text)
 
         # Update the last processed timestamp to the latest timestamp in the processed data
         if processed_data:
