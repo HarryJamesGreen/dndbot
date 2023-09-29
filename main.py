@@ -44,6 +44,7 @@ def main():
             # Try to extract text from the screenshot
             try:
                 text, color = extract_text_and_color_from_image(screenshot_np)
+                print(f"Extracted Text: {text} | Extracted Color: {color}")
                 # Save the raw OCR text to output.csv
                 save_raw_ocr_to_csv(text, 'docs/output.csv')
             except Exception as e:
@@ -64,15 +65,13 @@ def main():
             'price': ...,
             'color': color
         }
-        print(type(processed_data))
-        print(processed_data)
 
         # Update the last processed timestamp to the latest timestamp in the processed data
         if processed_data and isinstance(processed_data, dict) and 'timestamp' in processed_data:
             last_processed_timestamp = processed_data['timestamp']
 
         # Append the processed data to data_to_export
-        data_to_export.extend(processed_data)
+        data_to_export.append(processed_data)
 
         # Export the data to the CSV file
         export_to_csv(data_to_export, 'docs/processed_data.csv')
