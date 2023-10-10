@@ -1,5 +1,5 @@
+from src.data_processing import perform_ocr
 from tests.test_speedtest import measure_execution_time
-from src.csv_exporter import export_to_csv
 
 
 def test_text_extraction():
@@ -11,7 +11,7 @@ def test_text_extraction():
     sample_filename = 'docs/processed_data.csv'
 
     # Measure execution time with sample arguments
-    execution_time = measure_execution_time(export_to_csv, sample_data, sample_filename)
+    execution_time = measure_execution_time(perform_ocr, sample_data, sample_filename)
 
 if __name__ == '__main__':
-    main()
+    test_text_extraction()

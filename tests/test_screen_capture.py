@@ -1,11 +1,14 @@
-from tests.test_speedtest import measure_execution_time
-from src.screen_capture import capture_dark_and_darker_window
 
+from main import capture_dark_and_darker_window
+import time
 
 def test_screen_capture():
-    execution_time = measure_execution_time(capture_dark_and_darker_window)
-    print(f'Execution time for capture_dark_and_darker_window: {execution_time:.4f} seconds')
+    screenshot, _ = capture_dark_and_darker_window()
+    if screenshot:
+        screenshot.save("test_screenshot.png", "PNG")
+        print("Screenshot saved as test_screenshot.png")
+    else:
+        print("Screenshot capture failed.")
+    time.sleep(2)
 
-
-if __name__ == '__main__':
-    main()
+test_screen_capture()

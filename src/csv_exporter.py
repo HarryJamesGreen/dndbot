@@ -1,5 +1,3 @@
-import csv
-import re
 import logging
 
 # Setup logging

@@ -1,4 +1,4 @@
-
+from src.screenshot_dnd import screenshot_dnd_left_half
 import pytesseract
 from PIL import Image
 import cv2
@@ -7,7 +7,6 @@ import re
 import logging
 from src.data_processing import process_ocr_results
 
-from src.screen_capture import capture_dark_and_darker_window
 
 # Set up logging
 logging.basicConfig(filename='ocr.log', level=logging.INFO)
@@ -72,10 +71,11 @@ def advanced_ocr_processing(ocr_text):
 
 
 def perform_ocr_and_annotation():
+    print("Performing OCR annotation...")
     global screenshot, image_copy
 
     # Capture the trade window region and get both the image and region
-    screenshot, trade_window_region = capture_dark_and_darker_window()
+    screenshot, trade_window_region = screenshot_dnd_left_half()
 
     if screenshot:
         try:

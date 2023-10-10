@@ -1506,3 +1506,434 @@ INFO:root:Extracted Text:
 ERROR:root:OCR failed or extracted empty text.
 INFO:root:Extracted Text: 
 ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: Loibabetipabaayeetniighcaly gl, elaine bays hla wed tite ae nsdst pat Suh ddbcadlec deh
+
+[0:29:38 PM] TsukTsukTsuk ! WTB [Gold Ingot]950G
+
+[1:29:39 PM] nyxmage : [Gold Ingot] buying 2 for 1800
+
+[0:29:40 PM] kumaziro : [Gold Ingot 980
+
+[1:29:42 PM] Zbam : [Gold Ore], [Gold Ingot] WTB 150 each 3x 500 4x700 6x 1030/WTB 900
+INGOT
+
+[1:29:43 PM] BowtcutKrieger : [Gold Ingot] WTB 900g,
+
+[0:29:43 PM] shudaosan : [Gold Ingot]"18 3key
+
+[1:29:44 PM] Shipwreck : [Gold Ingot], [Gold Ore] Buying Ingot 900g or Ore 150g/ea
+
+[0:29:44 PM] ItsDorzeTTV : [Gold Ingot] 950g
+
+[1:29:45 PMI MrGolD1 : [Gold Ingot]x8 Buying Gold Ingit (1 key)x 16 (2 Key)
+
+[1:29:46 PM] RambiADC : [Gold Ingot 1 x1000g
+
+[1:29:49 PM] ValiumErys : [Gold Ingot 10006,
+
+‘L TwoSwordSteve
+
+
+INFO:root:Added new data: 0:29:44 PM, ItsDorzeTTV, Gold Ingot, , 950g
+INFO:root:Extracted Text: ee EN
+
+structure gui = OCRGuiCroot)
+, gui.run()
+» OGExes gui.update_text_box_with_csv_de
+
+© _init_(self, root) gui.update_image(‘docs/screensh
+® update_image(self, image_p.
+@ update_text_box_with_csv_c
+
+@updetesprogress bar(self, y OCRGui » get last_S_data from.csv() > except Exce
+
+Run @ main «
+
+
+INFO:root:Extracted Text: Toa a Re ee Le eee ee ee ee
+[1:35:09 PM] cloudbarbie : [Gold Ingot 1100
+
+(0:35:09 PM] TWRI : [Gold Ingot] WTB 950
+
+[1:35:09 PM] ZhuBowWoman : [Gold Ingot 1250
+
+[1:35:09 PM] RockR : [Wolf Pelt]x4----- 2x[ Gold Ingot]
+
+[1:35:11 PM] LiteralRatGamer : [Gold Ingot] 6x 1Key
+
+[1:35:11 PM] BowlcutKrieger : [Gold Ingot] WTB 950G :)
+
+[1:35:15 PM] FistoTD : [Gold Ingot] WTB ik
+
+[1:35:15 PM] Consténtine : [Gold Ingot] Trading Golden Keys for 8x Gold Ingots Each
+[1:35:16 PM] 2140 : [Gold Ingot x7 Tkey
+
+[1:35:19 PM] cloudbarbie : [Gold Ingot]1100
+
+[1:35:19 PM] Shipwreck : [Gold Ingot], [Gold Ore]] Buying Ingot 900g or Ore 150g/ea
+[1:35:20 PM] Yuno : [Gold Ingot] WTB 10006
+
+‘L TwoSwordSteve
+
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:invalid command name ".!progressbar"
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 105, in main
+    gui.update_progress_bar((ocr_count % 10) * 10)  # Update progress bar
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\src\gui.py", line 62, in update_progress_bar
+    self.progress_bar["value"] = value
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1713, in __setitem__
+    self.configure({key: value})
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1702, in configure
+    return self._configure('configure', cnf, kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 1692, in _configure
+    self.tk.call(_flatten((self._w, cmd)) + self._options(cnf))
+_tkinter.TclError: invalid command name ".!progressbar"
+
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 136, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 136, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 136, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 136, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 136, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 137, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 137, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 136, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 137, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 137, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 137, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 137, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 138, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 138, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 137, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 137, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 137, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 137, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 137, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 136, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 136, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:get_training_choice() missing 1 required positional argument: 'gui'
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 136, in main
+    perform_training = get_training_choice()
+                       ^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_training_choice() missing 1 required positional argument: 'gui'
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:name 'ttk' is not defined
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 135, in main
+    perform_training = get_training_choice(gui)  # Pass the GUI instance to get_training_choice
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 45, in get_training_choice
+    ttk.Button(choice_window, text="Yes", command=on_yes).pack()
+    ^^^
+NameError: name 'ttk' is not defined
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:name 'ttk' is not defined
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 135, in main
+    perform_training = get_training_choice(gui)  # Pass the GUI instance to get_training_choice
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 45, in get_training_choice
+    ttk.Button(choice_window, text="Yes", command=on_yes).pack()
+    ^^^
+NameError: name 'ttk' is not defined
+
+ERROR:root:An error occurred while getting training choice: name 'ttk' is not defined
+ERROR:root:An error occurred in the OCR loop: cannot unpack non-iterable Image object
+ERROR:root:An error occurred while getting training choice: name 'ttk' is not defined
+ERROR:root:An error occurred in the OCR loop: cannot unpack non-iterable Image object
+ERROR:root:An error occurred while getting training choice: name 'ttk' is not defined
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred in the OCR loop: cannot unpack non-iterable Image object
+ERROR:root:An error occurred in the OCR loop: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred in the OCR loop: cannot unpack non-iterable Image object
+ERROR:root:An error occurred in the OCR loop: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred in the OCR loop: cannot unpack non-iterable Image object
+ERROR:root:An error occurred in the OCR loop: cannot unpack non-iterable Image object
+ERROR:root:An error occurred in the OCR loop: cannot unpack non-iterable Image object
+ERROR:root:An error occurred in the OCR loop: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred in the OCR loop: cannot unpack non-iterable Image object
+ERROR:root:An unexpected error occurred.
+ERROR:root:invalid command name ".!frame2.!text"
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 184, in main
+    perform_training = get_training_choice(gui)  # Pass the GUI instance to get_training_choice
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 68, in get_training_choice
+    gui.clear_text_box()  # Clear the text box
+    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\src\gui.py", line 71, in clear_text_box
+    self.text_box.delete("1.0", tk.END)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 3667, in delete
+    self.tk.call(self._w, 'delete', index1, index2)
+_tkinter.TclError: invalid command name ".!frame2.!text"
+
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An unexpected error occurred.
+ERROR:root:invalid command name ".!frame2.!text"
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 186, in main
+    perform_training = get_training_choice(gui)  # Pass the GUI instance to get_training_choice
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 68, in get_training_choice
+    gui.clear_text_box()  # Clear the text box
+    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\src\gui.py", line 80, in clear_text_box
+    self.text_box.delete("1.0", tk.END)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 3667, in delete
+    self.tk.call(self._w, 'delete', index1, index2)
+_tkinter.TclError: invalid command name ".!frame2.!text"
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:invalid command name ".!frame2.!text"
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 186, in main
+    perform_training = get_training_choice(gui)  # Pass the GUI instance to get_training_choice
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 68, in get_training_choice
+    gui.clear_text_box()  # Clear the text box
+    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\src\gui.py", line 80, in clear_text_box
+    self.text_box.delete("1.0", tk.END)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 3667, in delete
+    self.tk.call(self._w, 'delete', index1, index2)
+_tkinter.TclError: invalid command name ".!frame2.!text"
+
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+ERROR:root:An unexpected error occurred.
+ERROR:root:invalid command name ".!frame2.!text"
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 187, in main
+    perform_training = get_training_choice(gui)  # Pass the GUI instance to get_training_choice
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 69, in get_training_choice
+    gui.clear_text_box()  # Clear the text box
+    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\src\gui.py", line 80, in clear_text_box
+    self.text_box.delete("1.0", tk.END)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 3667, in delete
+    self.tk.call(self._w, 'delete', index1, index2)
+_tkinter.TclError: invalid command name ".!frame2.!text"
+
+ERROR:root:An unexpected error occurred.
+ERROR:root:invalid command name ".!frame2.!text"
+ERROR:root:Traceback: 
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 187, in main
+    perform_training = get_training_choice(gui)  # Pass the GUI instance to get_training_choice
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\main.py", line 69, in get_training_choice
+    gui.clear_text_box()  # Clear the text box
+    ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\src\gui.py", line 80, in clear_text_box
+    self.text_box.delete("1.0", tk.END)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.1520.0_x64__qbz5n2kfra8p0\Lib\tkinter\__init__.py", line 3667, in delete
+    self.tk.call(self._w, 'delete', index1, index2)
+_tkinter.TclError: invalid command name ".!frame2.!text"
+
+ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object

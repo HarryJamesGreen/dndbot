@@ -1,11 +1,40 @@
-import re
 import csv
 import logging
 import os
+import re
+
+import pytesseract
+
+# Configure Tesseract path
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 
-screenshot_file_path = 'docs/screenshot.png'
-csv_file_path = 'docs/processed_data.csv'
+def perform_ocr(image_path):
+    """
+    Perform OCR on the image specified by image_path using Tesseract.
+
+    Parameters:
+        image_path (str): The path to the image file.
+
+    Returns:
+        str: The text extracted from the image.
+    """
+    try:
+        # Use Tesseract to do OCR on the image
+        extracted_text = pytesseract.image_to_string(image_path)
+
+        # Log the extracted text
+        logging.info(f"Extracted Text: {extracted_text}")
+
+        return extracted_text
+    except Exception as e:
+        # Log any errors that occur
+        logging.error(f"An error occurred during OCR: {str(e)}")
+        return None
+
+
+screenshot_file_path = 'screenshot_dnd_left_half.png'
+csv_file_path = 'processed_data.csv'
 
 def read_image_data(file_path):
     try:
@@ -58,5 +87,5 @@ if __name__ == '__main__':
     print("Current Working Directory:", os.getcwd())
 
     # Example usage:
-    text = "Your OCR text here"  # Replace with your actual OCR text
+    text = "output.txt"  # Replace with your actual OCR text
     process_ocr_results(text, screenshot_file_path, csv_file_path)
