@@ -1,5 +1,5 @@
 import tkinter as tk
-from src.gui import OCRGui
+from src.guiDND import OCRGui
 
 
 def test_gui():

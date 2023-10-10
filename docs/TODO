@@ -1,1 +1,50 @@
+1. main.py
+Multiple import statements for the same modules (e.g., logging, tkinter, pytesseract, etc.) are present, which is not a good practice.
+The function get_training_choice(gui) contains print statements like print("break 1"), which might be leftover debug statements.
+The function train_ocr(gui, progress_value) is called with a progress_value that is not used within the function.
+The function perform_ocr(image_path) is defined but not used within main.py.
+The function test_ocr_export() is called but does not seem to have a practical application in the main logic.
+The function update_gui(gui, data_queue) tries to unpack three values from data_queue.get_nowait(), but it's not guaranteed that three values will always be available in the queue.
+The function main() initializes and starts threads but does not handle thread termination or errors during thread execution.
+2. src/Training.py
+The function draw_bounding_box(event, x, y, flags, param) uses a global variable image_copy which might not be the best practice.
+The function advanced_ocr_processing(ocr_text) defines a regex pattern but does not seem to be used within the script.
+The function perform_ocr_and_annotation() uses a global variable image_copy and does not handle potential issues with file I/O operations safely.
+The function main() is defined but does not seem to have a practical application in the script.
+3. src/csv_exporter.py
+This file only contains logging setup and does not define or perform any functionality.
+4. src/data_processing.py
+The function perform_ocr(image_path) is defined but not used within the script.
+The function process_ocr_results(text, screenshot_file_path, csv_file_path) does not return a value, which might be an issue since it's expected to return a value in main.py.
+5. src/gui.py
+The function update_progress_bar(self, value) is defined three times, which is not valid and will result in only the last definition being used.
+The function run(self) is defined but not used within the script.
+The function update_text_box_with_csv_data(self, file_path) does not handle potential issues with file I/O operations safely.
+6. src/screenshot_dnd.py
+The function screenshot_dnd_left_half() does not handle potential issues with file I/O operations safely.
+The function open_captured_image() is defined but not used within the script.
+General Observations:
+There is no clear loop for OCR scanning in the provided code, which might be the reason why it's not looping through OCR scans.
+Exception handling is present but does not provide a recovery mechanism or user notification in the GUI.
+The code lacks comments explaining the logic, making it a bit challenging to understand the intended functionality and flow.
+Recommendations:
+Ensure that the OCR loop is defined and controlled correctly in the main logic.
+Implement a clear and user-friendly notification mechanism for errors and exceptions.
+Refactor the code to avoid using global variables and ensure that functions are defined and used correctly.
+Add comments and documentation to explain the code logic and flow.
+
+
+
+Now lets work on this There is no clear loop for OCR scanning in the provided code, which might be the reason why it's not looping through OCR scans.
+Exception handling is present but does not provide a recovery mechanism or user notification in the GUI.
+The code lacks comments explaining the logic, making it a bit challenging to understand the intended functionality and flow.
+Recommendations:
+Ensure that the OCR loop is defined and controlled correctly in the main logic.
+Implement a clear and user-friendly notification mechanism for errors and exceptions.
+Refactor the code to avoid using global variables and ensure that functions are defined and used correctly.
+Add comments and documentation to explain the code logic and flow.
+
+
+
+
 
