@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import os
 import csv
 import pytest
@@ -27,3 +28,16 @@ def test_process_ocr_results(readable_csv_file):
 
 if __name__ == '__main__':
     pytest.main()
+=======
+import csv
+
+file_path = r'C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\docs\processed_data.csv'
+
+try:
+    with open(file_path, 'r', newline='', encoding='utf-8') as file:
+        reader = csv.reader(file)
+        existing_data = [row for row in reader]
+        print("File read successfully!")
+except Exception as e:
+    print(f"Error reading file: {str(e)}")
+>>>>>>> d2376579866c166e8ebea19176a5d87e9c6a2ea4
