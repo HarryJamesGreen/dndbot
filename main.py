@@ -12,11 +12,16 @@ from src.screen_capture import capture_dark_and_darker_window
 from src.data_processing import process_ocr_results
 from tqdm import tqdm
 import threading
+import os
 
-# Path to the LibreOffice Calc executable
-libreoffice_executable = r"C:\Program Files\LibreOffice\program\scalc.exe"
-# Path to your spreadsheet file
-spreadsheet_file = r"C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python bot\docs\processed_data.csv"
+# Debug: Print current working directory
+print(f"Current Working Directory: {os.getcwd()}")
+
+# Debug: Check if the image file exists
+if os.path.exists('screenshot.png'):
+    print("Image file exists.")
+else:
+    print("Image file does not exist.")
 
 # Configure logging
 logging.basicConfig(filename='docs/ocr.log', level=logging.INFO)
@@ -76,6 +81,16 @@ def train_ocr():
         perform_ocr_and_annotation()
 
 
+def test_ocr_on_screenshot(image_path):
+    try:
+        # Perform OCR on the provided image
+        text = pytesseract.image_to_string(image_path)
+        print("Extracted Text:")
+        print(text)
+    except Exception as e:
+        print("An error occurred during OCR:")
+        print(e)
+
 def main():
     gui = None  # Initialize gui variable here
 
@@ -96,12 +111,6 @@ def main():
     if perform_training == 'yes':
         train_ocr()
 
-    # Clear the content of the CSV file before opening it
-    clear_csv_file('docs/processed_data.csv')
-
-    # Open LibreOffice Calc with the CSV file
-    subprocess.Popen([libreoffice_executable, spreadsheet_file])
-
     while True:
         if keyboard.is_pressed('Esc'):
             print("Exiting the program...")
@@ -109,6 +118,7 @@ def main():
 
         screenshot, region = capture_dark_and_darker_window()
         if screenshot:
+            screenshot = screenshot.convert("RGB")  # Convert to RGB mode
             screenshot.save("screenshot.png", "PNG")
             try:
                 text = pytesseract.image_to_string('screenshot.png')
@@ -121,9 +131,9 @@ def main():
                 logging.error(f"An unexpected error occurred: {e}")
 
             # Process OCR results with a progress bar
+
             for i in tqdm(range(100), desc="Processing OCR results", ascii=False, ncols=75):
                 processed_data_list = process_ocr_results(text)
-                time.sleep(0.01)  # Simulating a delay
 
                 # Update the GUI table with the processed data
                 if gui_thread.is_alive():
@@ -131,8 +141,6 @@ def main():
                 else:
                     logging.warning("The GUI thread has exited")
                     break
-
-
 
 if __name__ == '__main__':
     main()

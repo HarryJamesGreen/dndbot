@@ -37,3 +37,625 @@ bs —
 =
 
 
+INFO:root:Extracted Text: @ process_ocr_results(text)
+
+eee
+
+open('C:/Users/coolb/Des
+
+newLine="", encodin
+
+reader = csv.reader(file)
+existing_data = [row for
+
+except FileNotFoundError:
+Logging.warning("File not fou
+
+open('C:/Users/coolb/Desktop
+
+process ocr_results()
+
+INFO:root:Extracted Text: @ process_ocr_results(text)
+
+eee
+
+open('C:/Users/coolb/Des
+
+newLine="", encodin
+
+reader = csv.reader(file)
+existing_data = [row for
+
+except FileNotFoundError:
+Logging.warning("File not fou
+
+open('C:/Users/coolb/Desktop
+
+process ocr_results()
+
+INFO:root:Extracted Text: @ libreoffice_executable ~ +P sepeenshor:
+
+Qari screenshot .save("'scree
+¥ try:
+© perform training Ny
+
+text = pytesseract
+‘Logging. info(F"Ext
+save_raw_ocr_to_cs
+
+© clear_csv_file (filename)
+© save_raw_ocr_to_csv(text, filen
+
+> @ gettraining_choice()
+© train_ocr() except UnicodeDecodeEr
+> @main() ng ‘Logging. error(#"Un
+except Exception as e:
+main() >» while True > if screenshot > except Unico
+
+
+INFO:root:Extracted Text: @ libreoffice_executable
+
+© spreadsheet file
+
+© perform_training
+
+© clear_csv_file(filename)
+
+© save_raw_ocr_to_csv(text, filen
+> @ gettraining_choice()
+
+© train_ocr()
+> © main()
+
+D>
+
+138 main()
+
+if _name_ == '_main_’
+
+
+INFO:root:Extracted Text: @ libreoffice_executable
+
+© spreadsheet file
+
+© perform_training
+
+© clear_csv_file(filename)
+
+© save_raw_ocr_to_csv(text, filen
+> @ gettraining_choice()
+
+© train_ocr()
+> © main()
+
+D>
+
+138 main()
+
+if _name_ == '_main_’
+
+
+INFO:root:Extracted Text: @ libreoffice_executable
+
+© spreadsheet file
+
+© perform_training
+
+© clear_csv_file(filename)
+
+© save_raw_ocr_to_csv(text, filen
+> @ gettraining_choice()
+
+© train_ocr()
+> © main()
+
+D>
+
+138 main()
+
+if _name_ == '_main_’
+
+
+INFO:root:Extracted Text: @ libreoffice_executable
+
+© spreadsheet file
+
+© perform_training
+
+© clear_csv_file(filename)
+
+© save_raw_ocr_to_csv(text, filen
+> @ gettraining_choice()
+
+© train_ocr()
+> © main()
+
+if __name_
+
+‘_main_!
+
+
+INFO:root:Extracted Text: @ libreoffice_executable
+
+@ spreadsheet file
+
+© perform_training
+
+© clear_csv_file(filename)
+
+© save_raw_ocr_to_csv(text, filen
+> @ gettraining_choice()
+
+© train_ocr()
+> Omain()
+
+main()
+
+save_raw_ocr_to_cs
+
+except UnicodeDecodeEr
+‘Logging. error(f"Un
+except Exception as e:
+‘Logging. error(f"An
+
+# Process OCR results
+for i in tqdm(range(19
+
+if perform _training == ‘yes’
+
+INFO:root:Extracted Text: @ file_path
+
+except Exception as e
+
+
+INFO:root:Extracted Text: @ libreoffice_executable
+© spreadsheet file
+© perform_training D>
+© clear_csv_file (filename) main()
+© save_raw_ocr_to_csv(text, filen 133
+
+> O get-training choice()
+© train_ocr()
+
+> Omain()
+
+
+INFO:root:Extracted Text: @ process_ocr_results(text)
+
+process ocr_results()
+
+# Validate extracted data
+
+if not item or not price:
+‘Logging. warning( msg:
+continue
+
+# Check for duplicates
+is_duplicate = any(
+e_item == item and e_
+
+with open(r'docs/processed_
+
+INFO:root:Extracted Text: @ libreoffice_executable
+
+@ spreadsheet file
+
+© perform_training
+
+© clear_csv_file(filename)
+
+© save_raw_ocr_to_csv(text, filen
+> @ gettraining_choice()
+
+© train_ocr()
+> Omain()
+
+# Configure logging
+‘Logging. basicConfig(+ilename="docs
+
+# Configure Tesseract path
+pytesseract. pytesseract.tesseract_
+
+# Variable to store the user's cho
+perform_training = None
+
+INFO:root:Extracted Text: @ csv_file_path
+@ readable_csv_file()
+
+@ test_process_ocr_results(reade
+
+# After processing OCR results,
+
+with open(readable_csv_file, ‘r
+reader = csv.reader(file)
+existing_data = [row for ro
+
+# Check if the data was success
+assert len(existing_data) == 1
+
+test_process_ocr_results()
+
+
+INFO:root:Extracted Text: @ csv_file_path
+@ readable_csv_file()
+@ test_process_ocr_results(reade
+
+BENSUNG ENG boy TALE GRASTS
+assert os.path.exists(readable_
+
+# Test process_ocr_results func
+# You can provide sample OCR te
+sample_ocr_text = "[timestamp]
+process_ocr_results(sample_ocr_
+
+# After processing OCR results,
+with open(readable_csv_file, 'r
+
+INFO:root:Extracted Text: def process_ocr_results(text):
+# Define the path to the ‘processed data.cav' file
+
+file_path = os.path. join(os.getowd(), ,
+
+. rest of the function ...
+
+INFO:root:Extracted Text: Sample_ocr_text = | Timestamp)
+process_ocr_results(sample_ocr_
+
+readable_csv file()
+Run @ main x
+
+Ga
+
+:\Users\coolb\AppData\Local\Microsoft\WindowsApps\python3.11.exe "C:
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+
+
+INFO:root:Extracted Text: Sample_ocr_text = | Timestamp)
+process_ocr_results(sample_ocr_
+
+test_process_ocr_results()
+Run @main x
+
+Ga
+
+:\Users\coolb\AppData\Local\Microsoft\WindowsApps\python3.11.exe "C:
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+
+
+INFO:root:Extracted Text: Sample_ocr_text = | Timestamp)
+process_ocr_results(sample_ocr_
+
+test_process_ocr_results()
+Run @main x
+
+Ga
+
+:\Users\coolb\AppData\Local\Microsoft\WindowsApps\python3.11.exe "C:
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+
+
+INFO:root:Extracted Text: test_file_readability() » try > with open(file_path, 'r,
+
+:\Users\coolb\AppData\Local\Microsoft\WindowsApps\python3.11.exe "C:
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+
+)
+
+INFO:root:Extracted Text: © train_ocr()
+> ® main)
+
+Run @ main «
+
+Ga
+
+C:\Users\coolb\AppData\Local\Microsoft\WindowsApps\python3.11.exe "C:!
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+
+io)
+ul
+
+)
+
+INFO:root:Extracted Text: © train_ocr()
+
+> ®main()
+
+Run @ main «
+
+Ga
+
+:\Users\coolb\AppData\Local\Microsoft\WindowsApps\python3.11.exe "C:
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\r
+Image file exists.
+
+
+INFO:root:Extracted Text: 
+INFO:root:Extracted Text: © train_ocr() ‘Logging. basicConfig(filename='docs
+> O main’)
+
+Run @ main «
+
+Ga
+
+:\Users\coolb\AppData\Local\Microsoft\WindowsApps\python3.11.exe "C:
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+
+Screenshot file path: C:\Users\coolb\Desktop\New folder (2)\uni\main\F
+Image file exists.
+
+
+INFO:root:Extracted Text: © train_ocr() ‘Logging. basicConfig(filename='docs
+> O main’)
+
+if 0s.path.exists('screenshot.p...
+Run @ main x
+
+Ga
+
+:\Users\coolb\AppData\Local\Microsoft\WindowsApps\python3.11.exe "C:
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+
+Screenshot file path: C:\Users\coolb\Desktop\New folder (2)\uni\main\F
+Image file exists.
+
+
+INFO:root:Extracted Text: © train_ocr()
+> ® main)
+
+main()
+
+main() > while True > if screenshot » fori in tqdm(
+Run @ main x
+
+Ga
+
+:\Users\coolb\AppData\Local\Microsoft\WindowsApps\python3.11.exe "C:
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+
+Screenshot file path: C:\Users\coolb\Desktop\New folder (2)\uni\main\F
+Image file exists.
+
+
+INFO:root:Extracted Text: © train_ocr()
+> ® main)
+
+main() > while True > if screenshot » fori in tqdm(
+Run @ main x
+
+Ga
+
+:\Users\coolb\AppData\Local\Microsoft\WindowsApps\python3.11.exe "C:
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+Current Working Directory: C:\Users\coolb\Desktop\New folder (2)\uni\n
+
+Screenshot file path: C:\Users\coolb\Desktop\New folder (2)\uni\main\F
+Image file exists.
+
+
+INFO:root:Extracted Text: @ sitignore
+@ main.py
+= ocr.log
+
+No structure
+
+26
+
+captured_image = pyautogui.s¢
+return captured_image, region
+else:
+print(r"Window with title ‘4
+return None, None # Return \
+
+INFO:root:Extracted Text: screenshot.png
+> (th External Libraries
+> 22 Scratches and Consoles
+
+Structure
+
+© perform_training
+
+© clear_csv_file(filename)
+
+@ save_raw_ocr_to_csv(text, filen
+> @ get_training_choice()
+
+® train_ocr()
+
+
+INFO:root:Extracted Text: screenshot.png
+> (th External Libraries
+> 22 Scratches and Consoles
+
+Structure
+
+138
+© perform_training
+
+© clear_csv_file(filename)
+
+@ save_raw_ocr_to_csv(text, filen
+> @ get_training_choice()
+
+® train_ocr()
+
+
+INFO:root:Extracted Text: try:
+image = Image.open(screenshot_
+image_data = image. tobytes()
+
+except Exception as e:
+print(f"Error reading image: {
+
+screenshot.png
+> (thExternal Libraries
+> = Scratches and Consoles
+
+Structure
+# Debug: Print current working dir
+print(f"current Working Directory:
+print(f"Screenshot file path: {os.
+
+@ screenshot_path
+
+© perform_training
+© clear_csv_file(filename)
+© save_raw_ocr_to_csv(text, filen
+
+~ > @get_training_choice() # Debug: Check if the image file e
+
+INFO:root:Extracted Text: @ ssitignore # Call the test function with t
+@ main.py
+
+21 ‘test_ocr_on_screenshot (screensh
+
+= ocr.log
+
+Structure
+
+@ test_ocr_on_screenshot(image.
+
+
+INFO:root:Extracted Text: @ gitignore
+
+# Update the GUI t
+
+@ main.py if gui_thread.is_a
+= ocr.log gui.update_tab
+else:
+Structure Logging. warnin
+break
+@ perform_training .
+© clear_csv_file(filename) ie
+
+© save_raw_ocr_to_csv(text, filen
+> @ gettraining_choice()
+@ train_ocr()
+
+main()
+
+
+INFO:root:Extracted Text: Ms README.md
+> (th External Libraries
+> 22 Scratches and Consoles
+
+# Update the GUI t
+if gui_thread.is_a
+gui.update_tab
+
+else:
+Structure ogging.warnin
+break
+> (Libraries '
+[Module Dependencies >
+
+main()
+
+
+INFO:root:Extracted Text: fp
+
+Palestine Terrorin\Python bo*Z
+The system cannot find the path specified.
+
+Previous? Days Ci\Users\coolb\Desktop\New folder (2)\uni\main\Python\Python
+
+A
+
+A
+A
+p
+
+Users\coolb\Desktop\New folder (2)\uni\main\Python\Python
+{C:\Users\coolb\Desktop\New folder (2)\uni\main\Python\Pythor
+Counteracting Escimrent working Directory: C:\Users\coolb\Desktop\New folder
+Current Working Directory: C:\Users\coolb\Desktop\New folder
+Image file exists.
+
+Revise Proposal
+
+New chat
+
+Show PDF for Analysis
+
+INFO:root:Extracted Text: ocr.log test_ocr_on_screen
+
+ocr_errors.log
+Me README.md
+
+text = pytesseract
+‘Logging. info(F"Ext
+save_raw_ocr_to_cs
+
+aan
+@ perform_training except UnicodeDecodeEr
+© clear_csv_file(filename) ‘Logging. error(#"Un
+© save_raw_ocr_to_csvi(text, filen except Exception as e:
+
+> @gattantalchocal ‘Logging. error(f"An
+
+® train_ocr()
+
+INFO:root:Extracted Text: ocr.log test_ocr_on_screen
+
+ocr_errors.log
+Me README.md
+
+text = pytesseract
+‘Logging. info(F"Ext
+save_raw_ocr_to_cs
+
+aan
+@ perform_training except UnicodeDecodeEr
+© clear_csv_file(filename) ‘Logging. error(#"Un
+© save_raw_ocr_to_csvi(text, filen except Exception as e:
+
+> @gattantalchocal ‘Logging. error(f"An
+
+® train_ocr()
+
+INFO:root:Extracted Text: a ‘text = pytesseract
+ocr ‘Logging. info(F"Ext
+ocr_errors.log 126 save_raw_ocr_to_cs
+Ms README.md
+
+except UnicodeDecodeEr
+‘Logging. error(f"Un
+except Exception as e:
+
+© perform training Logging. error(F"An
+
+@ clear_csv_file(filename}
+
+@ save_raw_ocr_to_csv(text, filen # Process OCR results
+> @ get_training_choice() I
+
+@ train_ocr() for i in tadm(range(10
+
+INFO:root:Extracted Text: Gene D if __name__ == '__main__':
+ocr_errors.log screenshot_file_path = ‘screens
+Mi README.md_ csv_file_path = os.path.join(os
+
+print("Current Working Director
+
+@ read_image_data(file_path) e Rc Ho com
+
+@ process_ocr_results(text, scree text = "Your OCR text here" #
+process_ocr_results(text, scree
+
+
+INFO:root:Extracted Text: Gene D if _name__ == '__main__':
+ocr_errors.log screenshot_file_path = ‘screens
+Ms README.md 52 csv_file_path = os.path.join(os
+
+print("Current Working Director
+
+@ read_image_data(file_path) e Rc Ho com
+
+@ process_ocr_results(text, scree text = "Your OCR text here" #
+process_ocr_results(text, scree
+
+
