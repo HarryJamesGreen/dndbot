@@ -58,28 +58,25 @@ def update_gui(gui, data_queue):
 def main():
     screenshot_file_path = "screenshot_dnd_left_half.png"
     csv_file_path = "processed_dnd_left_half.png"
-    root = tk.Tk()  # Ensure Tkinter is imported
+
+    root = tk.Tk()
     app = gui.OCRGui(master=root)
 
-    # Data queue for thread communication
     data_queue = queue.Queue()
 
-    # OCR thread
     ocr_thread = threading.Thread(target=dp.process_ocr_results,
                                   args=(data_queue, screenshot_file_path, csv_file_path))
     ocr_thread.start()
 
-    # GUI update thread
     gui_update_thread = threading.Thread(target=update_gui,
-                                        args=(app, data_queue))
+                                         args=(app, data_queue))
     gui_update_thread.start()
 
-    # Main GUI loop
-    app.mainloop()
+    root.mainloop()  # Ensure you're calling mainloop on the Tkinter root object
 
-    # Ensure threads are terminated when GUI is closed
     ocr_thread.join()
     gui_update_thread.join()
+
 
 if __name__ == "__main__":
     main()

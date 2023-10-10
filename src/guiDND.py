@@ -2,6 +2,7 @@ import tkinter as tk
 from PIL import Image, ImageTk
 import logging
 import pytesseract
+
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 
 logging.basicConfig(filename="ocr.log", level=logging.INFO)
@@ -11,7 +12,6 @@ class OCRGui:
         self.root = master  # Corrected reference to master
         self.root.title("Dark and Darker market Bot")
         self.root.geometry("600x600")
-
 
     def update_image(self, image_path):
         try:
