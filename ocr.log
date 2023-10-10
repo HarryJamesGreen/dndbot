@@ -659,3 +659,850 @@ print("Current Working Director
 process_ocr_results(text, scree
 
 
+INFO:root:Extracted Text: 
+INFO:root:Extracted Text: 
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+INFO:root:Extracted Text: 
+INFO:root:Extracted Text: 
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.
+INFO:root:Extracted Text: 
+ERROR:root:OCR failed or extracted empty text.

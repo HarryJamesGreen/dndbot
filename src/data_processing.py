@@ -4,6 +4,9 @@ import logging
 import os
 
 
+screenshot_file_path = 'docs/screenshot.png'
+csv_file_path = 'docs/processed_data.csv'
+
 def read_image_data(file_path):
     try:
         with open(file_path, 'rb') as file:
@@ -21,12 +24,15 @@ def process_ocr_results(text, screenshot_file_path, csv_file_path):
         matches = pattern.findall(text)
 
         existing_data = []
-        try:
-            with open(csv_file_path, 'a', newline='', encoding='utf-8') as file:
-                reader = csv.reader(file)
-                existing_data = [row for row in reader]
-        except FileNotFoundError:
-            logging.warning(f"File not found: {csv_file_path}. A new file will be created.")
+        # Check if the file exists before trying to read it
+        if os.path.exists(csv_file_path):
+            try:
+                # Open the file in read mode for reading
+                with open(csv_file_path, 'r', newline='', encoding='utf-8') as file:
+                    reader = csv.reader(file)
+                    existing_data = [row for row in reader]
+            except FileNotFoundError:
+                logging.warning(f"File not found: {csv_file_path}. A new file will be created.")
 
         with open(csv_file_path, 'a', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
@@ -48,8 +54,6 @@ def process_ocr_results(text, screenshot_file_path, csv_file_path):
 
 
 if __name__ == '__main__':
-    screenshot_file_path = 'screenshot.png'
-    csv_file_path = os.path.join(os.getcwd(), 'docs', 'processed_data.csv')
 
     print("Current Working Directory:", os.getcwd())
 

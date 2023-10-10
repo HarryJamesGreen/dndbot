@@ -1,45 +1,20 @@
 import tkinter as tk
 from tkinter import ttk
-from PIL import Image, ImageTk  # Import the Pillow library for image handling
+from PIL import Image, ImageTk
+import csv
+import logging
 
+# Configure logging
+logging.basicConfig(filename='ocr.log', level=logging.INFO)
 
-def get_last_5_data_from_csv(file_path):
-    """
-    Get the last 5 rows from the CSV file.
-
-    Parameters:
-        file_path (str): The path to the CSV file.
-
-    Returns:
-        list: A list of the last 5 rows from the CSV file.
-    """
-    data = []
-    try:
-        with open(file_path, 'r', newline='', encoding='utf-8') as file:
-            reader = csv.reader(file)
-            data = list(reader)[-5:]  # Get the last 5 rows
-    except FileNotFoundError:
-        logging.warning(f"File not found: {file_path}.")
-    except Exception as e:
-        logging.error(f"An error occurred while reading {file_path}: {str(e)}")
-
-    return data
 
 class OCRGui:
     def __init__(self, root):
         self.root = root
         self.root.title("OCR Processing Tool")
 
-        # Calculate the center position of the screen
-        screen_width = self.root.winfo_screenwidth()
-        screen_height = self.root.winfo_screenheight()
-        window_width = 600
-        window_height = 600  # Adjusted to accommodate new widgets
-        x = (screen_width - window_width) // 2
-        y = (screen_height - window_height) // 2
-
         # Set the window size and position
-        self.root.geometry(f"{window_width}x{window_height}+{x}+{y}")
+        self.root.geometry("600x600")
 
         # Create a Canvas widget to display the screenshot
         self.canvas = tk.Canvas(self.root, width=300, height=200)
@@ -80,7 +55,7 @@ class OCRGui:
         Parameters:
             file_path (str): The path to the CSV file.
         """
-        data = get_last_5_data_from_csv(file_path)
+        data = self.get_last_5_data_from_csv(file_path)
 
         # Clear the text box
         self.text_box.delete("1.0", tk.END)
@@ -109,6 +84,29 @@ class OCRGui:
         # Start the GUI main loop
         self.root.mainloop()
 
+    @staticmethod
+    def get_last_5_data_from_csv(file_path):
+        """
+        Get the last 5 rows from the CSV file.
+
+        Parameters:
+            file_path (str): The path to the CSV file.
+
+        Returns:
+            list: A list of the last 5 rows from the CSV file.
+        """
+        data = []
+        try:
+            with open(file_path, 'r', newline='', encoding='utf-8') as file:
+                reader = csv.reader(file)
+                data = list(reader)[-5:]  # Get the last 5 rows
+        except FileNotFoundError:
+            logging.warning(f"File not found: {file_path}.")
+        except Exception as e:
+            logging.error(f"An error occurred while reading {file_path}: {str(e)}")
+
+        return data
+
 
 if __name__ == '__main__':
     root = tk.Tk()
@@ -117,4 +115,4 @@ if __name__ == '__main__':
 
     # Example usage: Update the Text Widget with the last 5 data from the CSV file
     gui.update_text_box_with_csv_data('docs/processed_data.csv')
-    gui.update_image('screenshot.png')
+    gui.update_image('docs/screenshot.png')

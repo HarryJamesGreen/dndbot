@@ -1,114 +1,65 @@
 import tkinter as tk
-from tkinter import ttk
-import pytesseract
 import logging
-import csv
-import time
-import keyboard
-import subprocess
-from src.gui import OCRGui
-from src.Training import perform_ocr_and_annotation
-from src.screen_capture import capture_dark_and_darker_window
+import pytesseract
 from src.data_processing import process_ocr_results
-from tqdm import tqdm
-import threading
-import os
-
-# Debug: Print current working directory
-print(f"Current Working Directory: {os.getcwd()}")
-
-# Debug: Check if the image file exists
-if os.path.exists('screenshot.png'):
-    print("Image file exists.")
-else:
-    print("Image file does not exist.")
+from src.screen_capture import capture_dark_and_darker_window
+from src.Training import perform_ocr_and_annotation
+from src.gui import OCRGui
+import keyboard
+import time
+import tkinter.ttk as ttk
 
 # Configure logging
-logging.basicConfig(filename='docs/ocr.log', level=logging.INFO)
+logging.basicConfig(filename='ocr.log', level=logging.INFO)
 
 # Configure Tesseract path
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-# Variable to store the user's choice
-perform_training = None
-
-
-def clear_csv_file(filename):
-    # Open the CSV file in write mode, which clears its contents
-    with open(filename, 'w', newline='') as file:
-        pass
-
-
-def save_raw_ocr_to_csv(text, filename):
-    with open(filename, 'a', newline='') as file:
-        writer = csv.writer(file)
-        writer.writerow([text])
-
 
 def get_training_choice():
-    global perform_training
-
-    # Create a dialog window for user choice
     choice_window = tk.Tk()
     choice_window.title("Training Choice")
+    user_choice = tk.BooleanVar(value=False)
 
-    def train_ocr_and_close():
-        global perform_training
-        perform_training = "yes"
+    def on_yes():
+        user_choice.set(True)
         choice_window.destroy()
 
-    def continue_without_training_and_close():
-        global perform_training
-        perform_training = "no"
+    def on_no():
+        user_choice.set(False)
         choice_window.destroy()
 
-    # Create "Yes" and "No" buttons in the dialog window
-    display_window = tk.Label(choice_window, text="Do you want to train OCR?"
-                                                   "\nThis will take a few minutes.")
-    display_window.pack()
-
-    yes_button = ttk.Button(choice_window, text="Yes", command=train_ocr_and_close)
-    no_button = ttk.Button(choice_window, text="No", command=continue_without_training_and_close)
-
-    yes_button.pack()
-    no_button.pack()
+    tk.Label(choice_window, text="Do you want to train OCR?\nThis will take a few minutes.").pack()
+    ttk.Button(choice_window, text="Yes", command=on_yes).pack()
+    ttk.Button(choice_window, text="No", command=on_no).pack()
 
     choice_window.mainloop()
+    return user_choice.get()
 
 
 def train_ocr():
-    for _ in range(3):  # Loop only three times
+    for _ in range(3):
         perform_ocr_and_annotation()
 
 
-def test_ocr_on_screenshot(image_path):
+def perform_ocr(image_path):
     try:
-        # Perform OCR on the provided image
         text = pytesseract.image_to_string(image_path)
-        print("Extracted Text:")
-        print(text)
+        logging.info(f"Extracted Text: {text}")
+        return text
     except Exception as e:
-        print("An error occurred during OCR:")
-        print(e)
+        logging.error(f"An error occurred during OCR: {str(e)}")
+        return None
+
 
 def main():
-    gui = None  # Initialize gui variable here
+    # Initialize GUI
+    root = tk.Tk()
+    gui = OCRGui(root)
 
-    # Initialize the Tkinter GUI in a separate thread
-    def run_gui():
-        nonlocal gui  # Use the outer gui variable
-        root = tk.Tk()
-        gui = OCRGui(root)
-        gui.run()
-
-    gui_thread = threading.Thread(target=run_gui)
-    gui_thread.daemon = True  # Set the thread as a daemon so it exits when the main program exits
-    gui_thread.start()
-
-    # Ask the user if they want to train OCR
-    get_training_choice()
-
-    if perform_training == 'yes':
+    # Check if the user wants to train OCR
+    perform_training = get_training_choice()
+    if perform_training:
         train_ocr()
 
     while True:
@@ -116,31 +67,35 @@ def main():
             print("Exiting the program...")
             break
 
-        screenshot, region = capture_dark_and_darker_window()
+        # 1. Capture Screenshot
+        screenshot, _ = capture_dark_and_darker_window()
         if screenshot:
-            screenshot = screenshot.convert("RGB")  # Convert to RGB mode
-            screenshot.save("screenshot.png", "PNG")
-            try:
-                text = pytesseract.image_to_string('screenshot.png')
-                logging.info(f"Extracted Text: {text}")
-                save_raw_ocr_to_csv(text, 'docs/output.csv')
+            screenshot_path = "screenshot.png"
+            screenshot.save(screenshot_path, "PNG")
+        else:
+            logging.error("Screenshot capture failed.")
+            continue
 
-            except UnicodeDecodeError as e:
-                logging.error(f"UnicodeDecodeError: {e}")
-            except Exception as e:
-                logging.error(f"An unexpected error occurred: {e}")
+        # 2. Perform OCR
+        extracted_text = perform_ocr(screenshot_path)
+        if not extracted_text:
+            logging.error("OCR failed or extracted empty text.")
+            continue
 
-            # Process OCR results with a progress bar
+        # 3. Process OCR Results
+        csv_file_path = 'output.csv'
+        processed_data_list = process_ocr_results(extracted_text, screenshot_path, csv_file_path)
 
-            for i in tqdm(range(100), desc="Processing OCR results", ascii=False, ncols=75):
-                processed_data_list = process_ocr_results(text)
+        # Update GUI
+        if processed_data_list:
+            gui.update_table(processed_data_list)
 
-                # Update the GUI table with the processed data
-                if gui_thread.is_alive():
-                    gui.update_table(processed_data_list)
-                else:
-                    logging.warning("The GUI thread has exited")
-                    break
+        # Optional: Add a delay before the next iteration
+        time.sleep(1)
+
+    # Start GUI main loop
+    root.mainloop()
+
 
 if __name__ == '__main__':
     main()
