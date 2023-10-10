@@ -10,6 +10,9 @@ from src.data_processing import process_ocr_results
 
 # Configure logging
 logging.basicConfig(filename='docs/ocr.log', level=logging.INFO)
+from logger import setup_logger
+
+logger = setup_logger()
 
 # Configure Tesseract path
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
@@ -39,24 +42,27 @@ def main():
     while True:
         screenshot, region = capture_dark_and_darker_window()
         if screenshot:
-            screenshot.save('screenshot.png', 'PNG')
+            screenshot.save("screenshot.png", "PNG")
             try:
                 text = pytesseract.image_to_string('screenshot.png')
-                print(f'Extracted Text: {text}')
-                save_raw_ocr_to_csv(text, 'docs/output.csv')
-            except UnicodeDecodeError as e:
-                print(f'UnicodeDecodeError: {e}')
-            except Exception as e:
-                print(f'An unexpected error occurred: {e}')
+                print(f"Extracted Text: {text}")
 
-            print('Processing OCR results...')
+                # Save raw OCR output to CSV
+                save_raw_ocr_to_csv(text, 'docs/output.csv')
+
+            except UnicodeDecodeError as e:
+                print(f"UnicodeDecodeError: {e}")
+            except Exception as e:
+                print(f"An unexpected error occurred: {e}")
+
+            print("Processing OCR results...")
             processed_data_list = process_ocr_results(text)
 
             if processed_data_list is not None:
                 data_to_export.extend(processed_data_list)
                 export_to_csv(data_to_export, 'docs/processed_data.csv')
             else:
-                print('There is nothing to export')
+                print("There is nothing to export")
 
 
 if __name__ == '__main__':
