@@ -1,16 +1,19 @@
-from tests.test_speedtest import measure_execution_time
-from src.data_processing import process_ocr_results
+import unittest
+from src.data_processing import process_ocr_results  # Ensure this import is correct
+import os
 
-# speedtest for function extract_text_from_image
-# execution time: 0.0519 seconds
+class TestOCRProcessing(unittest.TestCase):
+    def test_process_ocr_results(self):
+        # Example usage
+        text = "[7:26:38 AM] cheppy : [Gold Ore]x3 600g"
+        expected_output = ['7:26:38 AM', 'cheppy', 'Gold Ore', 'x3', '600g']
 
-def test_data_processing():
-    for i in range(5):
-        # Sample OCR text for testing
-        sample_ocr_text = '../docs/annotated_data.txt'
+        # Call the function
+        ans = process_ocr_results(text)
 
-        # Measure execution time with sample OCR text
-        execution_time = measure_execution_time(process_ocr_results, sample_ocr_text)
+        # Check the output
+        self.assertEqual(ans, expected_output)
+
 
 if __name__ == '__main__':
-    main()
+    unittest.main()

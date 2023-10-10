@@ -59,8 +59,9 @@ def get_training_choice():
 
     # Create "Yes" and "No" buttons in the dialog window
     display_window = tk.Label(choice_window, text="Do you want to train OCR?"
-                                                   "\nThis wont take long.")
+                                                   "\nThis will take a few minutes.")
     display_window.pack()
+
     yes_button = ttk.Button(choice_window, text="Yes", command=train_ocr_and_close)
     no_button = ttk.Button(choice_window, text="No", command=continue_without_training_and_close)
 
@@ -94,9 +95,6 @@ def main():
 
     if perform_training == 'yes':
         train_ocr()
-
-    print("Press [Esc] at any time to exit the program.")
-    data_to_export = []
 
     # Clear the content of the CSV file before opening it
     clear_csv_file('docs/processed_data.csv')
@@ -134,7 +132,6 @@ def main():
                     logging.warning("The GUI thread has exited")
                     break
 
-                print(f"\rProcessing OCR results: {i + 1}/100", end='')  # Overwrite progress on the same line
 
 
 if __name__ == '__main__':
