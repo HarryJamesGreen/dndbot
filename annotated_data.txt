@@ -1,18 +1,11 @@
-[10:62:43 PM] shigimao4 : [Loose Trousers ]150g.
-
-\Microsoft\WindowsApps \ pythons ':\Users\coolb\Desktop\New folder (2)\uni\t
+\Microsoft\WindowsApps\python3.11.exe "
 ing? (yes/no): yes
 
-
-[10:62:43 PM] shigimao4 : [Loose Trousers ]150g.
+':\Users\coolb\Desktop\New folder (2)\uni\t
 
 \Microsoft\WindowsApps\python3.11.exe "C:\Users\coolb\Desktop\New folder (2)\uni\s
 ing? (yes/no): yes
-
-xt regions and press ‘s' to save
-
-
-[10:62:43 PM] shigimao4 : [Loose Trousers ]150g.
+ext regions and press ‘s' to save annotations...
 
 \Microsoft\WindowsApps\python3.11.exe "C:\Users\coolb\Desktop\New folder (2)\uni\s
 ing? (yes/no): yes

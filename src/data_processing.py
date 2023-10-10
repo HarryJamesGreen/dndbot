@@ -1,13 +1,20 @@
-import re
 import pytesseract
 from PIL import Image, ImageStat
-from src import screen_capture, csv_exporter
-pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\\tesseract.exe'
 
+# Configure Tesseract path
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
-#   Error Handling
 
 def get_text_color(img, target_text):
+    """Extract the dominant color of the target text from the image.
+
+    Parameters:
+        img (PIL.Image): The image to process.
+        target_text (str): The text to find in the image.
+
+    Returns:
+        tuple: Dominant color of the target text or None if text is not found.
+    """
     boxes = pytesseract.image_to_boxes(img)
     for box in boxes.splitlines():
         b = box.split()
@@ -18,37 +25,30 @@ def get_text_color(img, target_text):
     return None
 
 
-import re
-from pytesseract import pytesseract
-
-import re
-from pytesseract import pytesseract
-
-import re
-from pytesseract import pytesseract
-
-
-import traceback
-
 def process_ocr_results(img):
-    text = ""  # Initialize text to an empty string
+    """Process OCR results and handle potential errors.
+
+    Parameters:
+        img (PIL.Image): The image to process.
+
+    Returns:
+        str: Extracted text or cleaned text in case of UnicodeDecodeError.
+    """
     try:
         text = pytesseract.image_to_string(img)
-        # rest of your code...
+        return text
     except UnicodeDecodeError as e:
-        print(f"UnicodeDecodeError: {e}")
+        print(f'UnicodeDecodeError: {e}')
         cleaned_text = text.encode('utf-8', 'ignore').decode('utf-8')
-        # rest of your code using cleaned_text...
+        return cleaned_text
     except Exception as e:
-        print(f"you are an indiot: {e}")
-        # Handle or log other exceptions...
-    return None  # or return an appropriate value
-
-
-
+        print(f'An unexpected error occurred: {e}')
+        return None
 
 
 if __name__ == '__main__':
-    img = screen_capture.capture_dark_and_darker_window()
-    extracted_data = process_ocr_results(img)
-    csv_exporter.export_to_csv(extracted_data, 'output.csv')
+    # Example usage
+    # img = screen_capture.capture_dark_and_darker_window()
+    # extracted_data = process_ocr_results(img)
+    # csv_exporter.export_to_csv(extracted_data, 'output.csv')
+    pass
