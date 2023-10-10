@@ -1,9 +1,9 @@
 
-from main import capture_dark_and_darker_window
+from src.screenshot_dnd import screenshot_dnd_left_half
 import time
 
 def test_screen_capture():
-    screenshot, _ = capture_dark_and_darker_window()
+    screenshot, _ = screenshot_dnd_left_half()
     if screenshot:
         screenshot.save("test_screenshot.png", "PNG")
         print("Screenshot saved as test_screenshot.png")

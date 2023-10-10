@@ -9,7 +9,7 @@ logging.basicConfig(filename="ocr.log", level=logging.INFO)
 
 class OCRGui:
     def __init__(self, master=None):
-        self.root = master  # Corrected reference to master
+        self.root = master
         self.root.title("Dark and Darker market Bot")
         self.root.geometry("600x600")
 

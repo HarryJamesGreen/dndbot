@@ -45,9 +45,15 @@ def read_image_data(file_path):
         return None
 
 
-def process_ocr_results(text, screenshot_file_path, csv_file_path):
-    image_data = read_image_data(screenshot_file_path)
+def process_ocr_results(data_queue, screenshot_file_path, csv_file_path):
+    # Ensure that text is a string before attempting regex
+    try:
+        text = data_queue.get_nowait()  # Assuming the text data is being passed via a queue
+    except queue.Empty:
+        logging.error("Queue is empty. No text data to process.")
+        return
 
+    image_data = read_image_data(screenshot_file_path)
     if image_data is not None:
         pattern = re.compile(r'\[(.*?)\] (.*?) : \[(.*?)\](x\d+)? (\d+g)')
         matches = pattern.findall(text)
