@@ -1,17 +1,12 @@
 import logging
-import os
 import queue
 import threading
 import tkinter as tk
-from tkinter import ttk
-
 import pytesseract
 from PIL import Image, ImageTk
-
 import src.data_processing as dp
 import src.guiDND as gui
-import src.screenshot_dnd as ssd
-
+pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
 # Logging setup
 logging.basicConfig(filename='dndbot.log', level=logging.DEBUG,
                     format='%(asctime)s:%(levelname)s:%(message)s')
@@ -61,6 +56,8 @@ def update_gui(gui, data_queue):
 
 
 def main():
+    screenshot_file_path = "screenshot_dnd_left_half.png"
+    csv_file_path = "processed_dnd_left_half.png"
     root = tk.Tk()  # Ensure Tkinter is imported
     app = gui.OCRGui(master=root)
 
@@ -69,7 +66,7 @@ def main():
 
     # OCR thread
     ocr_thread = threading.Thread(target=dp.process_ocr_results,
-                                 args=(data_queue,))
+                                  args=(data_queue, screenshot_file_path, csv_file_path))
     ocr_thread.start()
 
     # GUI update thread
@@ -83,7 +80,6 @@ def main():
     # Ensure threads are terminated when GUI is closed
     ocr_thread.join()
     gui_update_thread.join()
-
 
 if __name__ == "__main__":
     main()

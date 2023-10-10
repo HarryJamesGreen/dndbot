@@ -1937,3 +1937,12 @@ ERROR:root:Traceback (most recent call last):
 _tkinter.TclError: invalid command name ".!frame2.!text"
 
 ERROR:root:An error occurred during OCR training: cannot unpack non-iterable Image object
+WARNING:root:Data queue is empty
+WARNING:root:Data queue is empty
+WARNING:root:Data queue is empty
+WARNING:root:Data queue is empty
+WARNING:root:Data queue is empty
+WARNING:root:Data queue is empty
+WARNING:root:Data queue is empty
+WARNING:root:Data queue is empty
+WARNING:root:Data queue is empty

@@ -83,9 +83,14 @@ def process_ocr_results(text, screenshot_file_path, csv_file_path):
 
 
 if __name__ == '__main__':
+    screenshot_file_path = 'screenshot_dnd_left_half.png'
+    csv_file_path = 'processed_data.csv'
+
 
     print("Current Working Directory:", os.getcwd())
 
-    # Example usage:
-    text = "output.txt"  # Replace with your actual OCR text
-    process_ocr_results(text, screenshot_file_path, csv_file_path)
+    # Example usage of process_ocr_results
+    extracted_text = perform_ocr(screenshot_file_path)
+    if extracted_text:
+        process_ocr_results(extracted_text, screenshot_file_path, csv_file_path)
+
