@@ -4,6 +4,9 @@ from PIL import Image, ImageStat
 from src import screen_capture, csv_exporter
 pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR\\tesseract.exe'
 
+
+#   Error Handling
+
 def get_text_color(img, target_text):
     boxes = pytesseract.image_to_boxes(img)
     for box in boxes.splitlines():
@@ -25,34 +28,24 @@ import re
 from pytesseract import pytesseract
 
 
-def process_ocr_results(img):
-    results = []
-    text = ""  # Initialize text to an empty string
-    pattern = r'\[(\d{2}:\d{2}:\d{2}[AM|PM]{2})\] \(([^)]+)\) : ([^:]+): (\d{4}G)'  # Define pattern outside the try block
+import traceback
 
+def process_ocr_results(img):
+    text = ""  # Initialize text to an empty string
     try:
         text = pytesseract.image_to_string(img)
-        matches = re.findall(pattern, text)
-
-        for match in matches:
-            timestamp, name, item, gold = match
-            color = get_text_color(img, item)
-            results.append({'timestamp': timestamp, 'name': name, 'item': item, 'price': gold, 'color': color})
-
-    except UnicodeDecodeError:
-        # Handle the UnicodeDecodeError by cleaning the text
+        # rest of your code...
+    except UnicodeDecodeError as e:
+        print(f"UnicodeDecodeError: {e}")
         cleaned_text = text.encode('utf-8', 'ignore').decode('utf-8')
-        matches = re.findall(pattern, cleaned_text)
-
-        for match in matches:
-            timestamp, name, item, gold = match
-            color = get_text_color(img, item)
-            results.append({'timestamp': timestamp, 'name': name, 'item': item, 'price': gold, 'color': color})
-
+        # rest of your code using cleaned_text...
     except Exception as e:
-        print(f"Error during OCR: {e}")
+        print(f"you are an indiot: {e}")
+        # Handle or log other exceptions...
+    return None  # or return an appropriate value
 
-    return results
+
+
 
 
 if __name__ == '__main__':
