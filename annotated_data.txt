@@ -1,16 +1,63 @@
-\Microsoft\WindowsApps\python3.11.exe "
-ing? (yes/no): yes
+_ | Train C
+es I. cco0.p2cu0
 
-':\Users\coolb\Desktop\New folder (2)\uni\t
+> Cvenv no_button.pack()
 
-\Microsoft\WindowsApps\python3.11.exe "C:\Users\coolb\Desktop\New folder (2)\uni\s
-ing? (yes/no): yes
-ext regions and press ‘s' to save annotations...
+@ sitignore
 
-\Microsoft\WindowsApps\python3.11.exe "C:\Users\coolb\Desktop\New folder (2)\uni\s
-ing? (yes/no): yes
+— ~ choice_window.mainLoop()
 
-ext regions and press ‘s' to save annotations...
+‘Structure
+@ libreoffice_executable
+adsh :
 
-ext regions and press ‘s' to save annotations...
+@ spreadshe def train_ocr():
+@per
+
+for _ in range(3): # L
+
+O clear sv-fle(fename) Pen CEO
+
+
+_ | Train C
+es I. cco0.p2cu0
+
+> Cvenv no_button.pack()
+
+@ sitignore
+
+— ~ choice_window.mainLoop()
+
+‘Structure
+@ libreoffice_executable
+adsh :
+
+@ spreadshe def train_ocr():
+@per
+
+for _ in range(3): # L
+
+O clear sv-fle(fename) Pen CEO
+
+
+_ | Train C
+es I. cco0.p2cu0
+
+> Cvenv no_button.pack()
+
+@ sitignore
+
+— ~ choice_window.mainLoop()
+
+‘Structure
+@ libreoffice_executable
+adsh :
+
+@ spreadshe def train_ocr():
+@per
+
+for _ in range(3): # L
+
+O clear sv-fle(fename) Pen CEO
+
 

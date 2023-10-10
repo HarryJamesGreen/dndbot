@@ -2,6 +2,8 @@ import pytesseract
 from PIL import Image, ImageStat
 import logging
 import os
+import csv
+import re
 
 # Setup logging
 logging.basicConfig(
@@ -37,21 +39,15 @@ def get_text_color(img: Image.Image, target_text: str) -> ImageStat:
         logging.error("Error in get_text_color: %s", str(e))
         return None
 
-def process_ocr_results(img: Image.Image) -> str:
-    """
-    Processes the OCR results and handles potential errors.
+def process_ocr_results(text):
+    # Regular expression to extract timestamp, username, and message
+    pattern = re.compile(r'\[(.*?)\] (.*?) : (.*)')
 
-    :param img: A PIL Image object.
-    :return: Extracted text or cleaned text in case of UnicodeDecodeError.
-    """
-    text = ""
-    try:
-        text = pytesseract.image_to_string(img)
-        return text
-    except UnicodeDecodeError as e:
-        logging.error('UnicodeDecodeError in process_ocr_results: %s', str(e))
-        cleaned_text = text.encode('utf-8', 'ignore').decode('utf-8')
-        return cleaned_text
-    except Exception as e:
-        logging.error('Unexpected error in process_ocr_results: %s', str(e))
-        return None
+    # Find all matches in the OCR text
+    matches = pattern.findall(text)
+
+    # Save matches to CSV
+    with open('docs/processed_data.csv', 'a', newline='', encoding='utf-8') as file:
+        writer = csv.writer(file)
+        for match in matches:
+            writer.writerow(match)

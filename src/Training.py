@@ -5,6 +5,7 @@ import cv2
 import numpy as np
 import re
 import logging
+from src.data_processing import process_ocr_results
 
 from src.screen_capture import capture_dark_and_darker_window
 
@@ -24,13 +25,6 @@ image_copy = None
 
 # Set up logging with buffering
 logging.basicConfig(filename='ocr.log', level=logging.INFO, buffer=10)
-
-
-def process_ocr_result(ocr_text):
-    # Implement logic to process the OCR result
-    logging.info("Processed OCR Result:")
-    logging.info(ocr_text)
-    # Add your custom processing logic here
 
 
 # Define the file to store annotated data
@@ -92,7 +86,7 @@ def perform_ocr_and_annotation():
             ocr_result = pytesseract.image_to_string(trade_window_image)
 
             # Process the OCR result
-            process_ocr_result(ocr_result)
+            process_ocr_results(ocr_result)
 
             # Convert the image to a NumPy array for OpenCV processing
             image_np = np.array(trade_window_image)
