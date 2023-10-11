@@ -4,6 +4,8 @@ import threading
 import tkinter as tk
 import pytesseract
 from PIL import Image, ImageTk
+from src.guiDND import OCRGui
+from src.data_processing import process_ocr_results
 import src.data_processing as dp
 import src.guiDND as gui
 pytesseract.pytesseract.tesseract_cmd = 'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
@@ -58,26 +60,21 @@ def update_gui(gui, data_queue):
 def main():
     screenshot_file_path = "screenshot_dnd_left_half.png"
     csv_file_path = "processed_dnd_left_half.png"
-    root = tk.Tk()
-    app = gui.OCRGui(master=root)
+    root = tk.Tk()  # Create a Tkinter root object
+    app = OCRGui(master=root)  # Initialize your OCRGui object
 
-    # Data queue for thread communication
     data_queue = queue.Queue()
 
-    # OCR thread
-    ocr_thread = threading.Thread(target=dp.process_ocr_results,
+    ocr_thread = threading.Thread(target=process_ocr_results,
                                   args=(data_queue, screenshot_file_path, csv_file_path))
     ocr_thread.start()
 
-    # GUI update thread
     gui_update_thread = threading.Thread(target=update_gui,
                                          args=(app, data_queue))
     gui_update_thread.start()
 
-    # Main GUI loop
-    app.mainloop()
+    root.mainloop()  # Call mainloop on the Tkinter root object
 
-    # Ensure threads are terminated when GUI is closed
     ocr_thread.join()
     gui_update_thread.join()
 

@@ -2,6 +2,7 @@ import csv
 import logging
 import os
 import re
+import queue
 
 import pytesseract
 
@@ -45,18 +46,21 @@ def read_image_data(file_path):
         return None
 
 
+
+
+
 def process_ocr_results(data_queue, screenshot_file_path, csv_file_path):
-    # Ensure that text is a string before attempting regex
     try:
-        text = data_queue.get_nowait()  # Assuming the text data is being passed via a queue
-    except queue.Empty:
-        logging.error("Queue is empty. No text data to process.")
+        text = data_queue.get_nowait()
+    except queue.Empty:  # Ensure queue is imported
+        print("Queue is empty. No text data to process.")
         return
 
     image_data = read_image_data(screenshot_file_path)
     if image_data is not None:
         pattern = re.compile(r'\[(.*?)\] (.*?) : \[(.*?)\](x\d+)? (\d+g)')
         matches = pattern.findall(text)
+        # ... (rest of the function)
 
         existing_data = []
         # Check if the file exists before trying to read it

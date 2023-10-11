@@ -70,8 +70,9 @@ def advanced_ocr_processing(ocr_text):
 # Function to perform OCR and annotate data
 
 
-def perform_ocr_and_annotation():
-    print("Performing OCR annotation...")
+def perform_ocr_and_annotation(image_object):
+    try:
+        print("Performing OCR annotation...")
     global screenshot, image_copy
 
     # Capture the trade window region and get both the image and region
