@@ -1975,3 +1975,4 @@ WARNING:root:Image file not found: path_to_a_default_image.jpg.
 WARNING:root:Data queue is empty
 WARNING:root:Image file not found: path_to_a_default_image.jpg.
 WARNING:root:Data queue is empty
+break

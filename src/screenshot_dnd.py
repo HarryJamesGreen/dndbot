@@ -26,19 +26,18 @@ def screenshot_dnd_left_half():
 
         # Save the screenshot as an image file
         screenshot.save("screenshot_dnd_left_half.png", "PNG")
-
-        print("Screenshot captured successfully.")
-
+        print("Screenshot saved.")
         return screenshot  # Return the screenshot image
     except Exception as e:
         logging.error(f"An error occurred during screenshot capture: {str(e)}")
         logging.error("Traceback: ")
         logging.error(traceback.format_exc())  # Log the full traceback
         return None  # Return None if an error occurred
+
+
 def open_captured_image():
     try:
         img = Image.open('screenshot_dnd_left_half.png')  # Use the correct file name
         img.show()
     except FileNotFoundError:
         print("The captured image file was not found.")
-

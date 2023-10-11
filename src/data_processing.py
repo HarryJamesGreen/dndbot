@@ -9,6 +9,12 @@ import pytesseract
 # Configure Tesseract path
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
+# Assigning paths to variables
+screenshot_file_path = 'screenshot.png'
+csv_file = 'processed_data.csv'
+
+
+
 
 def perform_ocr(image_path):
     """
@@ -49,20 +55,26 @@ def read_image_data(file_path):
 
 
 
+import os
+import csv
+import queue
+import re
+import pytesseract
+import logging
+
+# Configure Tesseract path
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 def process_ocr_results(data_queue, screenshot_file_path, csv_file_path):
     try:
-        text = data_queue.get_nowait()
-    except queue.Empty:  # Ensure queue is imported
-        print("Queue is empty. No text data to process.")
-        return
+        # Perform OCR and get the text
+        extracted_text = perform_ocr(screenshot_file_path)
 
-    image_data = read_image_data(screenshot_file_path)
-    if image_data is not None:
+        # Process the extracted text...
         pattern = re.compile(r'\[(.*?)\] (.*?) : \[(.*?)\](x\d+)? (\d+g)')
-        matches = pattern.findall(text)
-        # ... (rest of the function)
-
+        matches = pattern.findall(extracted_text)
         existing_data = []
+
         # Check if the file exists before trying to read it
         if os.path.exists(csv_file_path):
             try:
@@ -90,6 +102,12 @@ def process_ocr_results(data_queue, screenshot_file_path, csv_file_path):
                 if not is_duplicate:
                     writer.writerow([timestamp, name, item, amount, price])
                     logging.info("Added new data: %s, %s, %s, %s, %s", timestamp, name, item, amount, price)
+
+        # Put the processed data into the queue
+        data_queue.put((csv_file_path, screenshot_file_path))
+    except Exception as e:
+        logging.error(f"Error processing OCR results: {str(e)}")
+
 
 
 if __name__ == '__main__':

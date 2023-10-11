@@ -2,3 +2,30 @@ WARNING:root:File not found: docs/processed_data.csv.
 WARNING:root:File not found: docs/processed_data.csv.
 WARNING:root:File not found: docs/processed_data.csv.
 WARNING:root:File not found: processed_data.csv.
+ERROR:root:Error processing trade window: cannot unpack non-iterable Image object
+ERROR:root:Error processing trade window: cannot unpack non-iterable Image object
+ERROR:root:Error processing trade window: cannot unpack non-iterable Image object
+ERROR:root:Error processing trade window: cannot unpack non-iterable Image object
+ERROR:root:Error processing trade window: cannot unpack non-iterable Image object
+ERROR:root:Error processing trade window: cannot unpack non-iterable Image object
+ERROR:root:Error processing trade window: cannot unpack non-iterable Image object
+ERROR:root:Error processing trade window: cannot unpack non-iterable Image object
+ERROR:root:Error processing trade window: cannot unpack non-iterable Image object
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Screenshot file does not exist.
+ERROR:root:Error processing trade window: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:971: error: (-215:Assertion failed) size.width>0 && size.height>0 in function 'cv::imshow'
+
+ERROR:root:Screenshot file does not exist.
+ERROR:root:Error processing trade window: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:971: error: (-215:Assertion failed) size.width>0 && size.height>0 in function 'cv::imshow'
+
+ERROR:root:Screenshot file does not exist.
+ERROR:root:Error processing trade window: OpenCV(4.8.1) D:\a\opencv-python\opencv-python\opencv\modules\highgui\src\window.cpp:971: error: (-215:Assertion failed) size.width>0 && size.height>0 in function 'cv::imshow'
+
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
+ERROR:root:Error processing trade window: process_ocr_results() missing 2 required positional arguments: 'screenshot_file_path' and 'csv_file_path'
